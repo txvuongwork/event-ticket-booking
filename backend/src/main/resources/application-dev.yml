@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:${DB_PORT:5433}/${DB_NAME:ticket_booking}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:12345678}
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
